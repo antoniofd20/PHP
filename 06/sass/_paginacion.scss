@@ -1,0 +1,41 @@
+h1 {
+  font-size: 64px;
+  color: orange;
+}
+
+.paginacion ul {
+  margin: 40px 0;
+  text-align: center;
+  li {
+    display: inline-block;
+    margin-right: 10px;
+    
+    a{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      color: rgba(0, 0, 0, 0.788);
+
+      &:hover {
+        background-color: rgba(255, 166, 0, 0.445);    
+      }
+    }
+  }
+
+  .active a {
+    background-color: orange;
+  }
+
+  .disabled {
+    cursor: not-allowed;
+
+    a {
+      background-color: #c8c8c8;
+      color: #fff;
+    }
+  }
+}
